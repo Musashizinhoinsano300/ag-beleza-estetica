@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ag Beleza Estética - Sempre cuidando da sua beleza!</title>
+    <style>
+        /* CSS Profissional - Estilo Elegante e Responsivo com cores da logo */
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Fundo preto da logo */
+            color: #ffffff; /* Texto branco principal */
+        }
+        /* Header */
+        header {
+            background-color: #000000; /* Preto puro */
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+        }
+        header img.logo {
+            max-width: 250px; /* Aumentei um pouco pra destacar a logo */
+            height: auto;
+        }
+        header h1 {
+            margin: 10px 0 5px;
+            color: #ffffff;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+        header p.tagline {
+            margin: 0;
+            color: #d4af37; /* Dourado suave para a frase */
+            font-style: italic;
+            font-size: 1.1em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 15px 0 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #d4af37; /* Dourado no hover */
+        }
+        /* Seções Gerais */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #111111; /* Cinza muito escuro para contraste */
+        }
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 25px;
+            color: #d4af37; /* Dourado para títulos */
+        }
+        /* Sobre */
+        #sobre p {
+            max-width: 900px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+        /* Serviços */
+        .servicos-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+        .servico {
+            background-color: #1a1a1a;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+            padding: 25px;
+            width: 320px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .servico:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(212,175,55,0.3); /* Dourado sutil no hover */
+        }
+        .servico img {
+            width: 100%;
+            border-radius: 12px 12px 0 0;
+        }
+        .servico h3 {
+            color: #d4af37;
+            margin: 15px 0 10px;
+        }
+        /* Galeria */
+        #galeria .slider {
+            max-width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+        }
+        #galeria .slides {
+            display: flex;
+            transition: transform 0.6s ease;
+        }
+        #galeria .slide {
+            min-width: 100%;
+        }
+        #galeria .slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+        #galeria button {
+            position: absolute;
+            top: 50%;
+            background: rgba(0,0,0,0.6);
+            color: #d4af37;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            transform: translateY(-50%);
+            font-size: 2em;
+            transition: background 0.3s;
+        }
+        #galeria button:hover {
+            background: rgba(212,175,55,0.4);
+        }
+        #galeria #prev { left: 15px; }
+        #galeria #next { right: 15px; }
+        /* Contato */
+        #contato form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        #contato input, #contato textarea {
+            padding: 14px;
+            border: 1px solid #444;
+            border-radius: 8px;
+            background-color: #1a1a1a;
+            color: #fff;
+            font-size: 1em;
+        }
+        #contato button {
+            background-color: #d4af37; /* Dourado */
+            color: #000;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1em;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        #contato button:hover {
+            background-color: #e0c070;
+        }
+        /* Footer */
+        footer {
+            background-color: #000000;
+            color: #d4af37;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 1.1em;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #d4af37;
+        }
+        /* Responsivo */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 15px 0;
+            }
+            .servicos-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            header img.logo {
+                max-width: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="Images/logo.png" alt="Ag Beleza Estética - Logo" class="logo">
+        <h1>Ag Beleza Estética</h1>
+        <p class="tagline">"Sempre cuidando da sua beleza!"</p>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Bem-vindo ao Ag Beleza Estética, onde cuidamos da sua beleza com profissionalismo, carinho e dedicação. Especializados em estética, unhas, cabelo e tratamentos exclusivos. Com anos de experiência, transformamos sua aparência para que você se sinta incrível todos os dias!</p>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-container">
+            <div class="servico">
+                <img src="Images/unhas.jpg" alt="Unhas">
+                <h3>Unhas</h3>
+                <p>Manicure, pedicure, alongamento em gel, unhas decoradas e designs exclusivos.</p>
+            </div>
+            <div class="servico">
+                <img src="Images/logo2.png" alt="Cabelo">
+                <h3>Cabelo</h3>
+                <p>Cortes modernos, coloração, hidratação profunda, progressiva e tratamentos capilares.</p>
+            </div>
+            <div class="servico">
+                <img src="Images/estetica.jpg" alt="Estética">
+                <h3>Estética</h3>
+                <p>Limpeza de pele, massagens modeladoras, depilação, peelings e procedimentos avançados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria com Slider -->
+    <section id="galeria">
+        <h2>Galeria de Trabalhos</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="Images/logo3.png" alt="Trabalho 1"></div>
+                <div class="slide"><img src="Images/logo4.png" alt="Trabalho 2"></div>
+                <div class="slide"><img src="Images/logo5.png" alt="Trabalho 3"></div>
+                <!-- Adicione mais <div class="slide"><img src="images/trabalhoX.jpg" alt="Trabalho X"></div> -->
+            </div>
+            <button id="prev">◀</button>
+            <button id="next">▶</button>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Telefone: (33) 98827-6827 | Email: contato@agbelezaestetica.com.br | Endereço: Rua José Quaresma da Costa 702</p>
+        <form id="formContato">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <input type="tel" placeholder="Seu Telefone">
+            <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Ag Beleza Estética. Todos os direitos reservados. | Desenvolvido por Arthur</p>
+        <p>
+            <a href="https://instagram.com/andrea_guimaraes05" target="_blank" rel="noopener noreferrer">Instagram</a> |
+            <a href="https://wa.me/5533988276827?text=Olá!%20Gostaria%20de%20agendar%20um%20horário" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Slider da Galeria
+        const slides = document.querySelector('.slides');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+        let currentIndex = 0;
+        function showSlide(index) {
+            const slideWidth = slides.children[0].clientWidth;
+            slides.style.transform = `translateX(-${index * slideWidth}px)`;
+        }
+        prev.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.children.length - 1;
+            showSlide(currentIndex);
+        });
+        next.addEventListener('click', () => {
+            currentIndex = (currentIndex < slides.children.length - 1) ? currentIndex + 1 : 0;
+            showSlide(currentIndex);
+        });
+        // Formulário (simulação)
+        const form = document.getElementById('formContato');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Mensagem enviada! Entraremos em contato em breve.');
+            form.reset();
+        });
+        // Scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
