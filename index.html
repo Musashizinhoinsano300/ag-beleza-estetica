@@ -5,37 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ag Beleza Estética - Sempre cuidando da sua beleza!</title>
     <style>
-        /* CSS Profissional - Estilo Elegante e Responsivo com cores da logo */
+        /* CSS Profissional - Tema Rosa Claro e Responsivo */
         body {
             font-family: 'Arial', 'Helvetica', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000000; /* Fundo preto da logo */
-            color: #ffffff; /* Texto branco principal */
+            background-color: #fff5f9; /* Rosa bem claro para fundo */
+            color: #333;
         }
         /* Header */
         header {
-            background-color: #000000; /* Preto puro */
+            background-color: #ffb6c1; /* Rosa claro principal */
             padding: 20px 0;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+            box-shadow: 0 4px 10px rgba(255,182,193,0.3);
         }
         header img.logo {
-            max-width: 250px; /* Aumentei um pouco pra destacar a logo */
+            max-width: 250px;
             height: auto;
         }
         header h1 {
             margin: 10px 0 5px;
-            color: #ffffff;
+            color: #fff;
             font-size: 2.2em;
             letter-spacing: 2px;
         }
         header p.tagline {
             margin: 0;
-            color: #d4af37; /* Dourado suave para a frase */
+            color: #fff;
             font-style: italic;
             font-size: 1.1em;
         }
@@ -49,25 +49,25 @@
             margin: 0 20px;
         }
         nav ul li a {
-            color: #ffffff;
+            color: #fff;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1em;
             transition: color 0.3s ease;
         }
         nav ul li a:hover {
-            color: #d4af37; /* Dourado no hover */
+            color: #ff69b4; /* Rosa mais vivo no hover */
         }
         /* Seções Gerais */
         section {
             padding: 60px 20px;
             text-align: center;
-            background-color: #111111; /* Cinza muito escuro para contraste */
+            background-color: #fff;
         }
         section h2 {
             font-size: 2.5em;
             margin-bottom: 25px;
-            color: #d4af37; /* Dourado para títulos */
+            color: #ff69b4; /* Rosa vibrante para títulos */
         }
         /* Sobre */
         #sobre p {
@@ -84,23 +84,23 @@
             gap: 25px;
         }
         .servico {
-            background-color: #1a1a1a;
+            background-color: #fff5f9; /* Rosa claro suave */
             border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+            box-shadow: 0 6px 15px rgba(255,182,193,0.3);
             padding: 25px;
             width: 320px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .servico:hover {
             transform: translateY(-10px);
-            box-shadow: 0 12px 25px rgba(212,175,55,0.3); /* Dourado sutil no hover */
+            box-shadow: 0 12px 25px rgba(255,105,180,0.4);
         }
         .servico img {
             width: 100%;
             border-radius: 12px 12px 0 0;
         }
         .servico h3 {
-            color: #d4af37;
+            color: #ff69b4;
             margin: 15px 0 10px;
         }
         /* Galeria */
@@ -110,7 +110,7 @@
             overflow: hidden;
             position: relative;
             border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+            box-shadow: 0 8px 20px rgba(255,182,193,0.4);
         }
         #galeria .slides {
             display: flex;
@@ -127,8 +127,8 @@
         #galeria button {
             position: absolute;
             top: 50%;
-            background: rgba(0,0,0,0.6);
-            color: #d4af37;
+            background: rgba(255,182,193,0.6);
+            color: #fff;
             border: none;
             padding: 15px;
             cursor: pointer;
@@ -137,7 +137,7 @@
             transition: background 0.3s;
         }
         #galeria button:hover {
-            background: rgba(212,175,55,0.4);
+            background: rgba(255,105,180,0.8);
         }
         #galeria #prev { left: 15px; }
         #galeria #next { right: 15px; }
@@ -151,15 +151,15 @@
         }
         #contato input, #contato textarea {
             padding: 14px;
-            border: 1px solid #444;
+            border: 1px solid #ffb6c1;
             border-radius: 8px;
-            background-color: #1a1a1a;
-            color: #fff;
+            background-color: #fff5f9;
+            color: #333;
             font-size: 1em;
         }
         #contato button {
-            background-color: #d4af37; /* Dourado */
-            color: #000;
+            background-color: #ff69b4; /* Rosa vibrante */
+            color: #fff;
             border: none;
             padding: 15px;
             cursor: pointer;
@@ -169,23 +169,23 @@
             transition: background 0.3s;
         }
         #contato button:hover {
-            background-color: #e0c070;
+            background-color: #ff1493;
         }
         /* Footer */
         footer {
             background-color: #000000;
-            color: #d4af37;
+            color: #ffb6c1;
             text-align: center;
             padding: 30px 20px;
             font-size: 1.1em;
         }
         footer a {
-            color: #ffffff;
+            color: #ffb6c1;
             text-decoration: none;
             transition: color 0.3s;
         }
         footer a:hover {
-            color: #d4af37;
+            color: #ff69b4;
         }
         /* Responsivo */
         @media (max-width: 768px) {
@@ -212,7 +212,9 @@
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#loiras">Loiras</a></li>
+                <li><a href="#cabelo">Cabelo</a></li>
+                <li><a href="#estetica">Estética</a></li>
                 <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -222,25 +224,39 @@
     <!-- Sobre -->
     <section id="sobre">
         <h2>Sobre Nós</h2>
-        <p>Bem-vindo ao Ag Beleza Estética, onde cuidamos da sua beleza com profissionalismo, carinho e dedicação. Especializados em estética, unhas, cabelo e tratamentos exclusivos. Com anos de experiência, transformamos sua aparência para que você se sinta incrível todos os dias!</p>
+        <p>Bem-vindo ao Ag Beleza Estética, onde cuidamos da sua beleza com profissionalismo, carinho e dedicação. Especializados em estética, loiras, cabelo e tratamentos exclusivos. Com anos de experiência, transformamos sua aparência para que você se sinta incrível todos os dias!</p>
     </section>
 
-    <!-- Serviços -->
-    <section id="servicos">
-        <h2>Nossos Serviços</h2>
+    <!-- Loiras -->
+    <section id="loiras">
+        <h2>Loiras</h2>
         <div class="servicos-container">
             <div class="servico">
-                <img src="Images/unhas.jpg" alt="Unhas">
-                <h3>Unhas</h3>
-                <p>Manicure, pedicure, alongamento em gel, unhas decoradas e designs exclusivos.</p>
+                <img src="Images/logo7.png" alt="Loiras">
+                <h3>Loiras</h3>
+                <p>Mechas, luzes, platinados, loiro mel, loiro bege e descolorações seguras com tratamento para manter os fios saudáveis e brilhantes.</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Cabelo -->
+    <section id="cabelo">
+        <h2>Cabelo</h2>
+        <div class="servicos-container">
             <div class="servico">
                 <img src="Images/logo2.png" alt="Cabelo">
                 <h3>Cabelo</h3>
                 <p>Cortes modernos, coloração, hidratação profunda, progressiva e tratamentos capilares.</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Estética -->
+    <section id="estetica">
+        <h2>Estética</h2>
+        <div class="servicos-container">
             <div class="servico">
-                <img src="Images/estetica.jpg" alt="Estética">
+                <img src="Images/logo6.png" alt="Estética">
                 <h3>Estética</h3>
                 <p>Limpeza de pele, massagens modeladoras, depilação, peelings e procedimentos avançados.</p>
             </div>
@@ -252,10 +268,10 @@
         <h2>Galeria de Trabalhos</h2>
         <div class="slider">
             <div class="slides">
-                <div class="slide"><img src="Images/logo3.png" alt="Trabalho 1"></div>
-                <div class="slide"><img src="Images/logo4.png" alt="Trabalho 2"></div>
-                <div class="slide"><img src="Images/logo5.png" alt="Trabalho 3"></div>
-                <!-- Adicione mais <div class="slide"><img src="images/trabalhoX.jpg" alt="Trabalho X"></div> -->
+                <div class="slide"><img src="Images/logo5.png" alt="Trabalho 1"></div>
+                <div class="slide"><img src="Images/logo3.png" alt="Trabalho 2"></div>
+                <div class="slide"><img src="Images/logo4.png" alt="Trabalho 3"></div>
+                <!-- Adicione mais slides aqui -->
             </div>
             <button id="prev">◀</button>
             <button id="next">▶</button>
@@ -277,7 +293,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Ag Beleza Estética. Todos os direitos reservados. | Desenvolvido por Arthur</p>
+        <p>© 2026 Ag Beleza Estética. Todos os direitos reservados. | Desenvolvido por Arthur Alves Viana</p>
         <p>
             <a href="https://instagram.com/andrea_guimaraes05" target="_blank" rel="noopener noreferrer">Instagram</a> |
             <a href="https://wa.me/5533988276827?text=Olá!%20Gostaria%20de%20agendar%20um%20horário" target="_blank" rel="noopener noreferrer">WhatsApp</a>
