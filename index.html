@@ -13,41 +13,51 @@
             background-color: #fff5f9; /* Rosa bem claro para fundo */
             color: #333;
         }
-        /* Header */
+
+        /* Header - Rosa que sobe junto e não atrapalha as fotos */
         header {
             background-color: #ffb6c1; /* Rosa claro principal */
-            padding: 20px 0;
+            padding: 20px 0 80px 0; /* Mais espaço abaixo para não cobrir conteúdo */
             text-align: center;
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1000; /* Sempre acima de tudo */
             box-shadow: 0 4px 10px rgba(255,182,193,0.3);
+            transition: all 0.3s ease;
         }
+
         header img.logo {
             max-width: 250px;
             height: auto;
+            display: block;
+            margin: 0 auto 15px; /* Centraliza e dá espaço abaixo da logo */
         }
+
         header h1 {
             margin: 10px 0 5px;
             color: #fff;
             font-size: 2.2em;
             letter-spacing: 2px;
         }
+
         header p.tagline {
             margin: 0;
             color: #fff;
             font-style: italic;
             font-size: 1.1em;
         }
+
         nav ul {
             list-style: none;
             padding: 15px 0 0;
             margin: 0;
         }
+
         nav ul li {
             display: inline-block;
             margin: 0 20px;
         }
+
         nav ul li a {
             color: #fff;
             text-decoration: none;
@@ -55,20 +65,25 @@
             font-size: 1.1em;
             transition: color 0.3s ease;
         }
+
         nav ul li a:hover {
-            color: #ff69b4; /* Rosa mais vivo no hover */
+            color: #ff69b4;
         }
+
         /* Seções Gerais */
         section {
             padding: 60px 20px;
             text-align: center;
             background-color: #fff;
+            position: relative; /* Para não ser sobreposto pelo header */
         }
+
         section h2 {
             font-size: 2.5em;
             margin-bottom: 25px;
-            color: #ff69b4; /* Rosa vibrante para títulos */
+            color: #ff69b4;
         }
+
         /* Sobre */
         #sobre p {
             max-width: 900px;
@@ -76,6 +91,7 @@
             line-height: 1.8;
             font-size: 1.1em;
         }
+
         /* Serviços */
         .servicos-container {
             display: flex;
@@ -83,26 +99,34 @@
             flex-wrap: wrap;
             gap: 25px;
         }
+
         .servico {
-            background-color: #fff5f9; /* Rosa claro suave */
+            background-color: #fff5f9;
             border-radius: 12px;
             box-shadow: 0 6px 15px rgba(255,182,193,0.3);
             padding: 25px;
             width: 320px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .servico:hover {
             transform: translateY(-10px);
             box-shadow: 0 12px 25px rgba(255,105,180,0.4);
         }
+
         .servico img {
             width: 100%;
+            height: auto;
             border-radius: 12px 12px 0 0;
+            display: block;
+            margin-bottom: 15px;
         }
+
         .servico h3 {
             color: #ff69b4;
             margin: 15px 0 10px;
         }
+
         /* Galeria */
         #galeria .slider {
             max-width: 900px;
@@ -112,18 +136,22 @@
             border-radius: 12px;
             box-shadow: 0 8px 20px rgba(255,182,193,0.4);
         }
+
         #galeria .slides {
             display: flex;
             transition: transform 0.6s ease;
         }
+
         #galeria .slide {
             min-width: 100%;
         }
+
         #galeria .slide img {
             width: 100%;
             height: auto;
             border-radius: 12px;
         }
+
         #galeria button {
             position: absolute;
             top: 50%;
@@ -136,11 +164,14 @@
             font-size: 2em;
             transition: background 0.3s;
         }
+
         #galeria button:hover {
             background: rgba(255,105,180,0.8);
         }
+
         #galeria #prev { left: 15px; }
         #galeria #next { right: 15px; }
+
         /* Contato */
         #contato form {
             max-width: 600px;
@@ -149,6 +180,7 @@
             flex-direction: column;
             gap: 18px;
         }
+
         #contato input, #contato textarea {
             padding: 14px;
             border: 1px solid #ffb6c1;
@@ -157,8 +189,9 @@
             color: #333;
             font-size: 1em;
         }
+
         #contato button {
-            background-color: #ff69b4; /* Rosa vibrante */
+            background-color: #ff69b4;
             color: #fff;
             border: none;
             padding: 15px;
@@ -168,9 +201,11 @@
             border-radius: 8px;
             transition: background 0.3s;
         }
+
         #contato button:hover {
             background-color: #ff1493;
         }
+
         /* Footer */
         footer {
             background-color: #000000;
@@ -179,14 +214,17 @@
             padding: 30px 20px;
             font-size: 1.1em;
         }
+
         footer a {
             color: #ffb6c1;
             text-decoration: none;
             transition: color 0.3s;
         }
+
         footer a:hover {
             color: #ff69b4;
         }
+
         /* Responsivo */
         @media (max-width: 768px) {
             nav ul li {
@@ -200,11 +238,14 @@
             header img.logo {
                 max-width: 180px;
             }
+            header {
+                padding: 15px 0 60px 0; /* Menos espaço em mobile */
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header - Rosa que sobe junto e não cobre as fotos -->
     <header>
         <img src="Images/logo.png" alt="Ag Beleza Estética - Logo" class="logo">
         <h1>Ag Beleza Estética</h1>
